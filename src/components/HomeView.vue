@@ -1,26 +1,23 @@
 <template>
-  <img src="@assets/corgis/corgi-tonge.gif" alt="corgi_tongue">
+  <div>
+    <img src="../assets/corgis/corgi-tonge.gif" alt="corgi_tongue">
+    <h3>Welcome to Corgi Chat!</h3>
+    <h4>Woof Woof!</h4>
+  </div>
 </template>
 
 <script>
   export default {
     methods: {
-      displayDetails(id) {
-        this.$router.push(
-          {
-            name: 'detail',
-            params: { id },
-          },
-        );
-      },
+
     },
   };
 </script>
 
 <style scoped>
-  .list {
-    width: 100%;
-    padding: 0;
+  img {
+    width: 50%;
   }
+
 </style>
 
