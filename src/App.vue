@@ -8,8 +8,8 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Navigation </span>
       <nav class="mdl-navigation">
-        <router-link class="mdl-navigation__link" to="/" @click.native="hideMenu">Home</router-link>
-        <router-link class="mdl-navigation__link" to="/about" @click.native="hideMenu">About</router-link>
+        <router-link class="mdl-navigation__link" @click.native="hideMenu" to="/">Home</router-link>
+        <router-link class="mdl-navigation__link" @click.native="hideMenu" to="/about">About</router-link>
       </nav>
     </div>
     <main class="mdl-layout__content">
@@ -26,7 +26,10 @@ require('material-design-lite');
 export default {
   name: 'app',
   methods: {
-
+    hideMenu() {
+      document.getElementsByClassName('mdl-layout__drawer')[0].classList.remove('is-visible');
+      document.getElementsByClassName('mdl-layout__obfuscator')[0].classList.remove('is-visible');
+    },
   },
 };
 </script>

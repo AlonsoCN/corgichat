@@ -1,8 +1,8 @@
 <template>
-  <div class="card-image">
+  <div>
     Developed by @_AlonsoCN.
     <br>
-    Thanks to Grazzia for your motivation! ♥
+    Thanks to Grazzia for her motivation! ♥
   </div>
 </template>
 
